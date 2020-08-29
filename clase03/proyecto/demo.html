@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formularios</title>
+</head>
+<body>
+    <h1>Ejemplos de Formularios</h1>
+    <h2>Ejemplo de Login</h2>
+
+    <!-- el # signidfica que no hace nada el formulario-->
+    <form method="GET" action="#">
+        <input type="text" name="usuario" id="" placeholder="ejemplo@correo.com" required maxlength="15">
+        <!-- Tener en cuenta que las verdaderas validaciones se hacen en el backend-->
+        <input type="password" name="password" id="" placeholder="Contraseña nueva" required> 
+        
+        <!--<input type="button" name="" id="" value="Ingresar"> -->
+        <button>Ingresar</button>
+    </form>
+
+    <h2>Registro</h2>   
+    <form action="POST" accept="#">
+        <!-- Para el SEO, los elementos de un formulario deben estar relacionados con una referencia label-->
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="" id="nombre" placeholder="Nombre" maxlength="20">
+
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="" id="apellido" placeholder="Apellido" maxlength="30">
+        <br>
+        <label for="correo">Correo: </label>    
+        <input type="email" name="" id="correo" placeholder="correo@correo.com" required>
+        <br>
+        <label for="nacimiento">Fecha de nacimiento: </label>
+        <input type="date" required id="nacimiento">
+        <br>
+        <label for="telefono">Teléfono: </label>
+        <input type="tel" name="" id="telefono" placeholder="num de teléfono">
+        <br>
+        <label for="color">Color favorito: </label>
+        <input type="color" id="color" required>
+        <br>
+        <label for="nacionalidad">Nacionalidad: </label>
+        <select name="" id="nacionalidad">
+            <option>Argentina</option> 
+            <option>Brasil</option>
+            <option>Paraguay</option>
+            <option>Uruguay</option>
+            <option>Chile</option>
+        </select>
+        <br>
+        <label for="mujer">mujer</label>
+        <input type="radio" name="sexo" value="mujer" id="mujer">
+        <label for="hombre">hombre</label>
+        <input type="radio" name="sexo" value="hombre" id="hombre">
+        <br>
+        <button>Registrar</button>
+    </form>
+    <hr>
+    <form action="#" method="post">
+        <input type="text" name="" id="" disabled value="ejemplo">
+        <input type="text" name="" id="" readonly value="solo lectura">
+    </form>
+</body>
+</html>
